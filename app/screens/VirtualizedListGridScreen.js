@@ -1,6 +1,6 @@
 // https://reactnative.dev/docs/virtualizedlist
 
-// virtualized list does not support columns papameter. Here is workaround to get columns in this component.
+// virtualized list does not support columns property. Here is workaround to get columns in this component.
 
 import React, {useState} from 'react';
 import {VirtualizedList, StyleSheet, View, Dimensions} from 'react-native';
