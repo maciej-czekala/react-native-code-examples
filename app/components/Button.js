@@ -10,14 +10,7 @@ import {StyleSheet, TouchableOpacity, Text, View} from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-function AppButton({title, icon, iconStyle, textStyle, containerStyle, type, onPress}) {
-  if (!type) {
-    type = 'fill';
-  }
-  if (icon && !iconStyle) {
-    iconStyle = {};
-  }
-
+function AppButton({title, icon, iconStyle = {}, textStyle, containerStyle, type = 'fill', onPress}) {
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -58,8 +51,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   text: {
-    fontSize: 22,
-    fontWeight: 'bold',
+    fontSize: 20,
     textAlign: 'center',
     marginLeft: 16,
   },
