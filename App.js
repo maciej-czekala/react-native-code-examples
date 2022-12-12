@@ -1,10 +1,13 @@
 import React from 'react';
 import type {Node} from 'react';
 
-import VirtualizedListGridScreen from "./app/screens/VirtualizedListGridScreen"
+// import Screen from "./app/screens/VirtualizedListGridScreen"
+import Screen from "./app/screens/PlaygroundScreen"
+
+
 
 const App: () => Node = () => {
-  return (<VirtualizedListGridScreen/>);
+  return (<Screen/>);
 };
 
 
